@@ -1,5 +1,7 @@
 # ACF Migrations
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/StoutLogic/acf-migrations/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/StoutLogic/acf-migrations/?branch=master)
+
 ___Warning: Not for production use yet.___ 
 
 Allow yourself to refactor [Advanced Custom Fields](https://www.advancedcustomfields.com/) field names and field keys without losing content in existing fields.
