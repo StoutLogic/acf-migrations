@@ -5,7 +5,7 @@ namespace StoutLogic\ACF\Migrations;
 class FieldMigration
 {
     /**
-     * @var string Field
+     * @var Field
      */
     private $field;
 
