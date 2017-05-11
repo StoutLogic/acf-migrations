@@ -37,10 +37,10 @@ class ChangeNameTransform extends Transform
     }
 
     /**
-     * @param string $subject
+     * @param HasMetaData $subject
      * @param string $oldFieldName
      */
-    private function updateFieldName($subject, $oldFieldName)
+    private function updateFieldName(HasMetaData $subject, $oldFieldName)
     {
         $fieldValue = $subject->getMetaData($oldFieldName);
         if (is_array($fieldValue)) {
@@ -52,10 +52,10 @@ class ChangeNameTransform extends Transform
     }
 
     /**
-     * @param string $subject
+     * @param HasMetaData $subject
      * @param string $oldFieldName
      */
-    private function deleteOldFieldName($subject, $oldFieldName)
+    private function deleteOldFieldName(HasMetaData $subject, $oldFieldName)
     {
         $subject->deleteMetaData($oldFieldName);
         $subject->deleteMetaData("_$oldFieldName");

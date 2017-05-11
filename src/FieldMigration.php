@@ -4,6 +4,14 @@ namespace StoutLogic\ACF\Migrations;
 
 class FieldMigration
 {
+    /**
+     * @var string Field
+     */
+    private $field;
+
+    /**
+     * @var Transform[]
+     */
     private $transforms = [];
 
     /**

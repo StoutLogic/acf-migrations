@@ -20,7 +20,7 @@ abstract class MetaDataType implements HasMetaData
     /**
      * @return string
      */
-    public abstract function getType();
+    abstract public function getType();
 
     public function getMetaData($key = '')
     {
