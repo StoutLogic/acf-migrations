@@ -1,0 +1,5 @@
+.DS_Store
+.idea
+vendor
+tests/wordpress
+tests/_output
