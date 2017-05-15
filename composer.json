@@ -27,8 +27,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
-        "post-update-cmd": ["@install_wordpress"],
-        "install_wordpress": "wp-install",
         "test": "wpcept run"
     }
 }
