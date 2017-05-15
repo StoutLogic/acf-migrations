@@ -1,5 +1,6 @@
 # ACF Migrations
 
+[![Build Status](https://travis-ci.org/StoutLogic/acf-migrations.svg?branch=master)](https://travis-ci.org/StoutLogic/acf-migrations)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/StoutLogic/acf-migrations/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/StoutLogic/acf-migrations/?branch=master)
 
 ___Warning: Not for production use yet.___ 
