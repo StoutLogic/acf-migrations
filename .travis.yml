@@ -7,11 +7,9 @@ cache:
   directories:
     - vendor
     - $HOME/.composer/cache
-env:
-  - DB_NAME="acf-migrations"
 
 before_install:
-  - mysql -e "create database IF NOT EXISTS ${DB_NAME};" -uroot
+  - mysql -e "create database IF NOT EXISTS acf-migrations;" -uroot
 
 install: composer update --prefer-dist
 
