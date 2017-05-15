@@ -20,7 +20,7 @@ class Field
      * @param string $key
      * @return Field
      */
-    public function setKey(string $key)
+    public function setKey($key)
     {
         $this->key = $key;
         return $this;
