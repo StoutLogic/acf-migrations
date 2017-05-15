@@ -11,7 +11,7 @@ env:
   - DB_NAME="acf-migrations"
 
 before_install:
-  - mysql -e "create database IF NOT EXISTS $DB_NAME;" -uroot
+  - mysql -e "create database IF NOT EXISTS ${DB_NAME};" -uroot
 
 install: composer update --prefer-dist
 
