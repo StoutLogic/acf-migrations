@@ -143,7 +143,7 @@ fi
 
 printf $BREATH
 echo "Editing integration.suite.yml"
-sed -i '' "s=wpRootFolder:\(.*\)=wpRootFolder: $WP_DIR=" $ROOT/tests/integration.suite.yml
+sed -i .bak "s=wpRootFolder:\(.*\)=wpRootFolder: $WP_DIR=" $ROOT/tests/integration.suite.yml
 
 printf $SEP
 
