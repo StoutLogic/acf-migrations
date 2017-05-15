@@ -8,7 +8,8 @@ cache:
     - vendor
     - $HOME/.composer/cache
 env:
-  - wpLoaderDbName=acf-migrations wpLoaderDbPrefix=wp_ wpUrl=localhost:9000 wpAdminUsername=admin wpAdminPassword=admin
+  - wpLoaderDbName=acf-migrations
+
 before_install:
   - mysql -e "create database IF NOT EXISTS $wpLoaderDbName;" -uroot
 
