@@ -15,8 +15,5 @@ install: composer update --prefer-dist
 
 before_script:
   - ./wp-install.sh
-  - cd $TRAVIS_BUILD_DIR/tmp/wordpress
-  - wp db export $TRAVIS_BUILD_DIR/tests/_data/dump.sql
-  - cd $TRAVIS_BUILD_DIR
 
 script: composer test
