@@ -11,13 +11,13 @@ modules:
         - WPLoader
     config:
         WPLoader:
-            wpRootFolder: /Users/steve/Work/stoutlogic/acf-migrations/tests/wordpress
-            dbName: acf-migrations-test
+            wpRootFolder:
+            dbName: acf-migrations
             dbHost: localhost
-            dbUser: test
-            dbPassword: test
-            tablePrefix: "wptests_"
-            domain: localhost:8000
-            adminEmail: admin@wp.local
-            title: WP Tests
+            dbUser: root
+            dbPassword:
+            tablePrefix: "wp_"
+            domain: localhost:9000
+            adminEmail: admin@localhost.com
+            title: Test
             bootstrapActions: []

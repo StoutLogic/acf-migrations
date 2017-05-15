@@ -1,8 +1,23 @@
 language: php
 php:
-  - '5.6'
-  - '7.0'
   - '7.1'
-  - nightly
-install: composer update
+services:
+  - mysql
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache
+env:
+  - wpLoaderDbName=acf-migrations wpLoaderDbPrefix=wp_ wpUrl=localhost:9000 wpAdminUsername=admin wpAdminPassword=admin
+before_install:
+  - mysql -e "create database IF NOT EXISTS $wpLoaderDbName;" -uroot
+
+install: composer update --prefer-dist
+
+before_script:
+  - ./wp-install.sh
+  - cd $TRAVIS_BUILD_DIR/tmp/wordpress
+  - wp db export $TRAVIS_BUILD_DIR/tests/_data/dump.sql
+  - cd $TRAVIS_BUILD_DIR
+
 script: composer test

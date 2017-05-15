@@ -5,8 +5,7 @@
 
     },
     "require-dev": {
-        "lucatume/wp-browser": "^1.19",
-        "johnpbloch/wordpress": "^4.7"
+        "lucatume/wp-browser": "^1.19"
     },
     "license": "GPL-2.0+",
     "authors": [
@@ -27,11 +26,9 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "extra": {
-        "wordpress-install-dir": "tests/wordpress"
-    },
     "scripts": {
-        "wordpress": "cd tests/wordpress; php -S localhost:8000",
+        "post-update-cmd": ["@install_wordpress"],
+        "install_wordpress": "wp-install",
         "test": "wpcept run"
     }
 }

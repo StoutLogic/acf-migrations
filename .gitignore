@@ -1,5 +1,5 @@
 .DS_Store
 .idea
 vendor
-tests/wordpress
+tmp
 tests/_output
