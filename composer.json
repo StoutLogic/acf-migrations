@@ -28,5 +28,6 @@
     "prefer-stable": true,
     "scripts": {
         "test": "wpcept run"
-    }
+    },
+    "type": "wordpress-plugin"
 }
